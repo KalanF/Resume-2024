@@ -3,100 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Resume</title>
+    <title>Kalan Funks Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Arial", sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #ffffff;
+            color: #000000;
         }
 
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .content {
-            padding: 20px;
+        .container {
             max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
 
+        h1, h2 {
+            font-weight: 700;
+            margin: 0 0 10px;
+        }
+
         h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-top: 30px;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 5px;
         }
 
         p {
-            font-size: 1.1em;
+            font-size: 14px;
             margin: 5px 0;
         }
 
-        .contact {
+        .contact, .section {
             margin-bottom: 20px;
         }
 
-        .resume-link {
-            font-size: 1.2em;
-            color: #4CAF50;
-            text-decoration: none;
-            border: 2px solid #4CAF50;
-            padding: 10px 20px;
-            border-radius: 5px;
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 16px;
         }
 
-        .resume-link:hover {
-            background-color: #4CAF50;
-            color: white;
+        .sub-section {
+            margin-bottom: 10px;
+        }
+
+        .sub-section p {
+            margin: 3px 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #333333;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .header .name {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .header .title {
+            font-size: 16px;
+        }
+
+        .employment-section, .education-section {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Kalan Stanley Funk</h1>
-        <p>Business Student at SAIT</p>
-    </header>
+    <div class="container">
+        <div class="header">
+            <div class="name">Kalan Stanley Funk</div>
+            <div class="title">Business Student</div>
+        </div>
 
-    <div class="content">
-        <h2>Contact Information</h2>
         <div class="contact">
             <p>Email: ksfunk1@gmail.com</p>
             <p>Phone: +5876644870</p>
-            <p>Linkedin: www.linkedin.com/in/kalan-funk</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/kalan-funk" target="_blank">www.linkedin.com/in/kalan-funk</a></p>
         </div>
 
-        <h2>About Me</h2>
+        <h2>PROFILE</h2>
         <p>
-Experience:
-Auto Handler
-Hansen's
-Oct 2023 - Present
-Calgary, Alberta, Canada
-Offloading new and used vehicles from trains, transporting/parking them in the yard and up to be loaded onto car carriers.
-
-Cashier
-Netsui Sushi & Japanese Grill
-Apr 2022 - Oct 2023 
-Calgary, Alberta, Canada
-Providing customer service and receiving food orders whilst maintaining interpersonal communication and dealing with cash and debit machines.
-
-Education:
-Southern Alberta Institute of Technology (SAIT)
-Diploma of Education, Business Administration Financial Services
-May 2024 - Aug 2025
+            Dedicated and motivated business student with experience in customer service, logistics, and teamwork. Known for excellent interpersonal communication skills and the ability to manage responsibilities effectively.
         </p>
 
-        <h2>Download My Resume</h2>
-        <p>You can download my full resume in PDF format by clicking the link below:</p>
-        <!-- The correct link to the PDF (to be updated later when you have a PDF) -->
-        <a href="#" class="resume-link">Download Resume</a>
+        <h2>EMPLOYMENT HISTORY</h2>
+        <div class="employment-section">
+            <div class="sub-section">
+                <div class="section-title">Auto Handler at Hansen's</div>
+                <p>Calgary, Alberta, Canada | Oct 2023 – Present</p>
+                <ul>
+                    <li>Offloaded new and used vehicles from trains and organized them in the yard.</li>
+                    <li>Transported vehicles efficiently for loading onto car carriers.</li>
+                </ul>
+            </div>
+            <div class="sub-section">
+                <div class="section-title">Cashier at Netsui Sushi & Japanese Grill</div>
+                <p>Calgary, Alberta, Canada | Apr 2022 – Oct 2023</p>
+                <ul>
+                    <li>Provided excellent customer service and managed food orders efficiently.</li>
+                    <li>Handled cash and debit transactions while maintaining communication skills.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>EDUCATION</h2>
+        <div class="education-section">
+            <div class="sub-section">
+                <div class="section-title">Southern Alberta Institute of Technology (SAIT)</div>
+                <p>Diploma in Business Administration - Financial Services | May 2024 – Aug 2025</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
